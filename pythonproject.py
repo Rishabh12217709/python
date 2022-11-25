@@ -1,15 +1,16 @@
-<html>
-<title>Flipkart
-</title>
-<head>
-</head>
-<body>
-<table border="0                                     " width="100%" bgcolor="#2874F0">
-<tr>
-<td align="right"><img src="https://th.bing.com/th/id/R.004062578e2711cff426c36e31adca9c?rik=fQ3tbmXlw5c6pQ&riu=http%3a%2f%2fwww.tandonamit.com%2fimages%2fclient3.png&ehk=5o3PmXd%2f7s0ErUA6KLx%2f15vo9O4syNMJC8Cdcb0FnBU%3d&risl=&pid=ImgRaw&r=0"></td>
-<td><input type="text" placeholder="search for products,brands and more"></td>
-<th><font color="white">login & signup</font> </th>
-<th><font color="white">More</font></th>
-<td><font color="white">My Cart</font></td>
-</body>
-</html>
+count=0
+c=0
+p=0
+for i in range(7,11):
+    for j in range(2,i):
+        if i %j== 0:
+            count=count+1
+    if count==0:
+        print(i,"is prime")
+        count=0
+        p=p+1
+    else:
+        print(i,"is composite")
+        count=0
+        c=c+1
+print("Count:",p,"prime and",c,"composite numbers in the range.")
